@@ -1,0 +1,13 @@
+.git
+node_modules
+temp_public
+temp_uploads
+npm-debug.log
+Dockerfile*
+docker-compose*
+.dockerignore
+.git
+.gitignore
+README.md
+LICENSE
+.vscode

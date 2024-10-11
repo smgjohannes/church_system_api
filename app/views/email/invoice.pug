@@ -1,0 +1,55 @@
+extends baseEmail
+
+block content
+  h2 Hello #{name},
+
+    p Thank you for using&nbsp;
+      a(href="https://eventclub.com.na" target='_blank') Event Club
+    hr
+    p Your Event placement order is ready for payment.
+
+    h2 Placement Summary:
+    table(border='0', cellpadding='0', cellspacing='0' id='products-table')
+      thead
+        tr
+          th Name
+          th Quantity
+          th Total
+      tbody
+        each item in data.items
+          tr
+            td
+            td #{item.name}
+            td #{item.quantity}
+            td #{item.totalAmount}
+
+    h3 Payment:
+
+    p Total Amount:&nbsp;
+      strong #{data.totalAmount}
+    p Reference:&nbsp;
+      strong #{data.reference}
+    hr
+
+    h3 Banking Details:
+
+    p Name:&nbsp;
+      strong City Striders Club
+    p Bank:&nbsp;
+      strong Bank Windhoek
+    p Branch:&nbsp;
+      strong Ongwediva Branch
+    p Branch Number:&nbsp;
+      strong 485-673
+    p Account type:&nbsp;
+      strong Savings
+    p Account Number:&nbsp;
+      strong 2000413575
+    hr
+    p NB: When making payment, please use the order number as reference, and forward proof of payment to&nbsp;
+      a(href='mailto:finance@citystriders.com') finance@citystriders.com,
+      |&nbsp; or WhatsApp to&nbsp;
+      strong 0812581023.
+    hr
+
+  p - Your Friends at EventClub

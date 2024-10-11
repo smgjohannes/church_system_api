@@ -1,0 +1,17 @@
+extends baseEmail
+
+block content
+  p We're verifying a recent sign-in for
+    a #{email}:
+    strong Timestamp:
+     p #{data.timestamp}
+    strong IP Address:
+     p #{data.ip}
+    strong User Agent:
+     p #{data.userAgent}
+    p You're receiving this message because of a successful sign-in from a device that we didn't recognize.
+     strong If you believe that this sign-in is suspicious,
+      a(href=`${url}`, target='_blank') please reset your password immediately.
+    p If you're aware of this sign-in, please disregard this notice. This can happen when you use your browser's incognito or private browsing mode or cleared your cookies.
+
+  p - Your Friends at EventClub

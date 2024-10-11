@@ -1,0 +1,22 @@
+[
+  "20240619143221-create-user.js",
+  "20220402175354-create-user.js",
+  "20220513202108-add-language-to-users-table.js",
+  "20240619143856-create-image.js",
+  "20240610073857-church-table.js",
+  "20240620131058-add-type-toimage.js",
+  "20240620131411-add-directory-toimage.js",
+  "20240716051202-files-table.js",
+  "20240910134356-add-fields-to-users.js",
+  "20240619143545-create-user-add-role.js",
+  "20240920144359-add-church-id-to-users.js",
+  "20240620123709-create-useragent.js",
+  "20220414134810-create-logins-table.js",
+  "20220414135127-create-password-resets-table.js",
+  "20240619143654-create-token.js",
+  "20240619143915-create-payment.js",
+  "20240620102917-create-members.js",
+  "20240713091254-create-member-payments-table.js",
+  "20240716050056-expense-table.js",
+  "20240926083026-add-payment-id-to-expenses.js"
+]
